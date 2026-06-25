@@ -1,2 +1,3 @@
-# madebythomasai.com
-Simple public landing page for madebythomasai.com
+# Made by Thomas AI
+
+Public landing page for madebythomasai.com.
