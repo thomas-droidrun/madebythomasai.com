@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Made by Thomas AI</title>
-  <meta name="description" content="AI automation, Netlify implementation, and growth operations support by Thomas Cloarec.">
+  <meta name="description" content="AI automation, Netlify implementation, n8n workflow audits, and growth operations support by Thomas Cloarec.">
   <style>
     :root { color-scheme: light dark; --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --accent:#38bdf8; --line:#334155; }
     * { box-sizing: border-box; }
@@ -20,6 +20,7 @@
     .tile span { color:var(--muted); font-size:.96rem; }
     .actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
     .offer { margin-top:30px; border:1px solid rgba(56,189,248,.35); border-radius:22px; padding:24px; background:rgba(8,47,73,.34); }
+    .offer.alt { border-color:rgba(34,197,94,.35); background:rgba(20,83,45,.28); }
     .offer h2 { margin:0 0 12px; font-size:clamp(1.45rem, 3vw, 2rem); line-height:1.12; }
     .offer p { color:var(--muted); margin:10px 0; }
     .offer ul { color:var(--muted); margin:12px 0 0; padding-left:20px; }
@@ -53,12 +54,24 @@
         <p>If you want to start or evaluate Netlify, use my Netlify partner referral link: <a class="link" href="https://join.netlify.com/q2r64l7uoe0q">https://join.netlify.com/q2r64l7uoe0q</a>. Netlify may credit signups made through this link.</p>
         <p>Ready for a first pass? You can reserve a $500 Netlify readiness audit deposit by card. I will confirm scope before work starts and route any mismatch to a refund or a different fixed-scope path.</p>
       </section>
+      <section class="offer alt" aria-label="n8n automation audit offer">
+        <div class="eyebrow">n8n automation audit</div>
+        <h2>Fixed-scope n8n audit for one messy workflow.</h2>
+        <p>If one workflow is still held together by spreadsheets, manual Slack pings, copy-paste between tools, or missed follow-ups, I can map it and turn it into a practical n8n automation plan.</p>
+        <ul>
+          <li><strong>Workflow map:</strong> I trace one process end to end, including triggers, approvals, handoffs, and failure points.</li>
+          <li><strong>Automation plan:</strong> You get the fastest useful n8n path, with data handoffs, error handling, and review steps.</li>
+          <li><strong>Build option:</strong> If you want implementation after the audit, I credit the audit fee toward the fixed-scope build.</li>
+        </ul>
+        <p>The audit deposit is $250. I confirm scope before work starts and keep the work bounded to one workflow.</p>
+      </section>
       <div class="actions">
-        <a class="button" href="mailto:thomascloarec@outlook.com?subject=Netlify%20implementation%20help">Request Netlify help</a>
-        <a class="button" href="https://checkout.stripe.com/c/pay/cs_live_a1AsGszDechCa1O6jl0s7jjrVtLY2LXcdTnjyt0Y4Xsoae0kGEKPvKXEvS#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWmlsc2BaMDRRNEZWXFVDR2pPaWRoaWJhfUZ1RH0xYm5OTkFcZzR9YkpCdVRKZEdRQU1cNVBPf3Jta3F0Z1Y2MkxJUWw9UmFnZ0tRVWhrXHBXSXM1PG1hf3dDPUs9amY1NW5Bcl0wbHFDJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl">Pay $500 audit deposit</a>
+        <a class="button" href="mailto:thomascloarec@outlook.com?subject=Automation%20or%20Netlify%20help">Request help</a>
+        <a class="button" href="https://checkout.stripe.com/c/pay/cs_live_a1AsGszDechCa1O6jl0s7jjrVtLY2LXcdTnjyt0Y4Xsoae0kGEKPvKXEvS#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWmlsc2BaMDRRNEZWXFVDR2pPaWRoaWJhfUZ1RH0xYm5OTkFcZzR9YkpCdVRKZEdRQU1cNVBPf3Jta3F0Z1Y2MkxJUWw9UmFnZ0tRVWhrXHBXSXM1PG1hf3dDPUs9amY1NW5Bcl0wbHFDJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl">Pay $500 Netlify audit deposit</a>
+        <a class="button" href="https://checkout.stripe.com/c/pay/cs_live_a1T0mypFw8qj4Hd6bWGvSYTL7remzvHtcvXsJpesqBo6Lne8mF0GlRCrhu#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdicGRmZGhqaWBTZHdsZGtxJz8nZmprcXdqaScpJ2R1bE5gfCc%2FJ3VuWmlsc2BaMDRRNEZWXFVDR2pPaWRoaWJhfUZ1RH0xYm5OTkFcZzR9YkpCdVRKZEdRQU1cNVBPf3Jta3F0Z1Y2MkxJUWw9UmFnZ0tRVWhrXHBXSXM1PG1hf3dDPUs9amY1NW5Bcl0wbHFDJyknY3dqaFZgd3Ngdyc%2FcXdwYCknZ2RmbmJ3anBrYUZqaWp3Jz8nJmNjY2NjYycpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl">Pay $250 n8n audit deposit</a>
         <a class="link" href="mailto:thomascloarec@outlook.com">thomascloarec@outlook.com</a>
       </div>
-      <footer>Truthful status: independent operator, accepted Netlify Ecosystem Partner, no unsupported client, certification, endorsement, agency, or guaranteed outcome claims.</footer>
+      <footer>Truthful status: independent operator, accepted Netlify Ecosystem Partner, no unsupported client, n8n certification, endorsement, agency, or guaranteed outcome claims.</footer>
     </section>
   </main>
 </body>
