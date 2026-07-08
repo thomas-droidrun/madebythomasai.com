@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuperPlane workflow demo proof</title>
+  <meta name="description" content="Truthful technical content sample by Thomas Cloarec for a SuperPlane Technical Content Engineer application.">
+  <style>
+    :root { color-scheme: light dark; --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --accent:#38bdf8; --line:#334155; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:radial-gradient(circle at top left, #1e3a8a 0, var(--bg) 42rem); color:var(--text); line-height:1.58; }
+    main { max-width:960px; margin:0 auto; padding:48px 20px 64px; }
+    .card { background:rgba(15,23,42,.9); border:1px solid var(--line); border-radius:28px; padding:42px; box-shadow:0 24px 80px rgba(0,0,0,.35); }
+    .eyebrow { color:var(--accent); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:.82rem; }
+    h1 { font-size:clamp(2.1rem, 6vw, 4.4rem); line-height:1; margin:12px 0 18px; letter-spacing:-.045em; }
+    h2 { margin-top:34px; font-size:1.45rem; }
+    p, li { color:var(--muted); }
+    a { color:#7dd3fc; }
+    .note { border:1px solid rgba(56,189,248,.35); border-radius:18px; padding:18px; background:rgba(8,47,73,.35); margin:24px 0; }
+    pre { background:#020617; border:1px solid var(--line); color:#e2e8f0; padding:16px; border-radius:14px; overflow:auto; }
+    code { font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .button { color:#082f49; background:var(--accent); padding:12px 16px; border-radius:999px; text-decoration:none; font-weight:800; }
+    footer { color:#94a3b8; margin-top:34px; font-size:.92rem; }
+    @media (max-width:720px){ .card{padding:28px;} }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <div class="eyebrow">Technical content sample</div>
+      <h1>Ship a safer workflow note with a claim-control checklist.</h1>
+      <p class="note">This is a written workflow demo by Thomas Cloarec for a SuperPlane Technical Content Engineer application. It is not a claim that Thomas has used SuperPlane or operated production platform infrastructure.</p>
+
+      <h2>Purpose</h2>
+      <p>This workflow turns a raw platform change into a developer-facing note that is easier to review before publication. It focuses on clarity, limitations, and recovery steps.</p>
+
+      <h2>User story</h2>
+      <p>A small platform team needs a repeatable way to decide whether a change is ready to announce to developers. The content owner has to turn scattered inputs into a useful developer-facing note without overstating what shipped.</p>
+
+      <h2>Inputs</h2>
+      <ul>
+        <li>A short change summary from an engineer.</li>
+        <li>A list of affected commands, APIs, or configuration fields.</li>
+        <li>Known limitations and rollback notes.</li>
+        <li>A target reader: developer, platform engineer, or internal app team.</li>
+        <li>Links to source material that should be cited or checked before publishing.</li>
+      </ul>
+
+      <h2>Workflow</h2>
+      <ol>
+        <li>Define the reader promise in one sentence.</li>
+        <li>Convert raw notes into a small outline: problem, what changed, minimal example, expected output, failure modes, and review checklist.</li>
+        <li>Build the example as a text-first sample, with narrow scope and clear placeholders.</li>
+        <li>Add a claim-control pass. Every strong claim gets one label: verified, inferred, or remove.</li>
+        <li>Add a reader-success check. Can a new reader tell what to do first, see good output, recover from mistakes, and spot unsupported claims?</li>
+        <li>Package the result as one short tutorial, one QA checklist, and an optional walkthrough script outline.</li>
+      </ol>
+
+      <h2>Mini example</h2>
+      <pre><code>Change: A new workflow flag lets teams preview generated release notes before publishing.
+Reader action: Run the preview step, inspect the generated note, then publish only after the checklist passes.
+Expected output: A draft note with title, change summary, usage steps, limitations, and rollback guidance.
+Recovery: If preview output is missing limitations or rollback notes, stop and request the source detail before publishing.</code></pre>
+
+      <h2>Review checklist</h2>
+      <ul>
+        <li>The example is small enough to test mentally.</li>
+        <li>Unsupported production, reliability, security, scale, and compatibility claims are removed or softened.</li>
+        <li>Limitations are visible before the call to action.</li>
+        <li>The reader can distinguish confirmed behavior from suggested next steps.</li>
+        <li>The final draft has a clear owner for unresolved facts.</li>
+      </ul>
+
+      <h2>Why this maps to SuperPlane content work</h2>
+      <p>Public role context described a flow of exploring a product, developing a real workflow, writing it up, and turning it into a video. This sample shows the written workflow and review discipline behind that flow. It is strongest evidence for careful tutorial writing, workflow design, QA review, and technical content judgment.</p>
+
+      <h2>Honest limits</h2>
+      <ul>
+        <li>This packet is a written workflow demo, not a finished product walkthrough.</li>
+        <li>It does not claim SuperPlane product usage.</li>
+        <li>It does not claim Kubernetes, Terraform, production platform engineering, conference speaking, community management, or polished video production experience.</li>
+      </ul>
+
+      <div class="actions">
+        <a class="button" href="https://github.com/thomas-droidrun/madebythomasai.com/tree/main/portfolio/superplane-workflow-demo-proof">View accompanying GitHub files</a>
+        <a href="/">Back to Made by Thomas AI</a>
+      </div>
+      <footer>Public, non-confidential portfolio sample. No secrets, private workspace data, customer data, paid provider setup, KYC, signatures, or binding approvals.</footer>
+    </article>
+  </main>
+</body>
+</html>
